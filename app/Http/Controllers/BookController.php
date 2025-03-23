@@ -12,8 +12,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        $book = Book::get();
-        return view('dashboard.book.display', compact('book'));
+        $books = Book::get();
+        return view('dashboard.book.display', compact('books'));
     }
 
     /**

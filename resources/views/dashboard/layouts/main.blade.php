@@ -35,15 +35,15 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active bg-gradient-dark text-white" href="{{ route('dashboard') }}">
+          <a class="nav-link {{ request()->routeIs('dashboard') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('dashboard') }}">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="{{ route('buku') }}">
+          <a class="nav-link {{ request()->routeIs('buku') ? 'active bg-gradient-dark text-white' : 'text-dark' }}" href="{{ route('buku') }}">
             <i class="material-symbols-rounded opacity-5">table_view</i>
-            <span class="nav-link-text ms-1">Tables</span>
+            <span class="nav-link-text ms-1">Buku</span>
           </a>
         </li>
         <li class="nav-item">
